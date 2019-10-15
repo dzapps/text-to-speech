@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+	<meta charset="UTF-8">
+	<title>Text to Speech</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="textToSpeech">
+		<form id="textToSpeechConverter" autocomplete="off">
+			<div class="textHeader">
+				<input type="text" id="textField" name="text">
+			</div>
+			<div class="speechHeader">
+				<!-- <a href="#" class="speak">تكلّم</a> -->
+				<input class="speak" type="submit" value="Speak">
+				
+				<audio src="" class="speech" hidden=""></audio>
+			</div>
+		</form>
+	</div>
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+	<script src="js/jquery.js"></script>
+	<script src="js/script-ar.js"></script>
+
+	<!-- <script>
+		$(function() {
+			$('a.speak').on('click',function(e) {
+				e.preventDefault();
+				var text = $('input[name="text"]').val();
+				text = encodeURIComponent(text);
+				console.log(text);
+				var url = "http://translate.google.com/translate_tts?tl=en&q=" + text + "&client=tw-ob";
+				$('audio').attr('src',url).get(0).play();
+			});
+		});
+	</script> -->
+
+</body>
+</html>
